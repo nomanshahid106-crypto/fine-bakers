@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fine Bakers — Bakery on Shahi Road | Rahim Yar Khan</title>
+<meta name="description" content="Fine Bakers — bakery on Shahi Rd, Rahim Yar Khan. Cakes, pastries, biscuits, breads and savouries. Rated 4.1 stars from 245 Google reviews. Call +92 325 6870001.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Great+Vibes&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff7e9;--cream2:#fdf0d7;--paper:#fffdf6;--caramel:#b06f2c;--caramel2:#8a531d;--cocoa:#3b2416;--cocoa2:#5a3a22;--soft:#e9d3ac;--ink:#43301e;--mut:#856f52}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:'Source Sans 3',sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1060px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+.serif{font-family:'Fraunces',serif}
+.script{font-family:'Great Vibes',cursive}
+
+/* top ribbon */
+.ribbon{background:var(--cocoa);color:#f3dfba;text-align:center;padding:9px 14px;font-size:.84rem;letter-spacing:.22em;text-transform:uppercase}
+.ribbon b{color:#eec27f}
+
+/* header */
+header{padding:22px 0 6px}
+.hbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.seal{width:62px;height:62px;border-radius:50%;background:var(--cocoa);color:#f6e3bb;display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:900;font-size:1.25rem;border:2px solid var(--caramel);box-shadow:0 0 0 4px var(--cream),0 0 0 5.5px var(--caramel)}
+.brand .name{font-family:'Fraunces',serif;font-weight:900;font-size:1.65rem;color:var(--cocoa);line-height:1}
+.brand small{display:block;letter-spacing:.3em;text-transform:uppercase;font-size:.64rem;color:var(--caramel2);font-weight:700;margin-top:4px}
+nav.links{display:flex;gap:26px;font-weight:600;color:var(--cocoa2)}
+nav.links a{border-bottom:2px solid transparent;padding-bottom:2px}
+nav.links a:hover{border-color:var(--caramel)}
+.hcall{background:var(--caramel);color:#fff;padding:11px 22px;border-radius:999px;font-weight:700;box-shadow:0 8px 18px rgba(176,111,44,.35)}
+.hcall:hover{background:var(--caramel2)}
+@media(max-width:760px){nav.links{display:none}}
+
+/* poster hero */
+.poster{margin:22px auto 0;max-width:1060px;padding:0 clamp(18px,4vw,40px)}
+.frame{background:var(--paper);border:2px solid var(--cocoa);outline:1.5px solid var(--caramel);outline-offset:5px;border-radius:6px;padding:clamp(30px,6vw,64px) clamp(20px,5vw,60px);text-align:center;position:relative;overflow:hidden}
+.wheat{position:absolute;color:var(--caramel);opacity:.34;pointer-events:none}
+.wheat.left{left:14px;top:50%;transform:translateY(-50%)}
+.wheat.right{right:14px;top:50%;transform:translateY(-50%) scaleX(-1)}
+@media(max-width:640px){.wheat{display:none}}
+.frame .over{letter-spacing:.34em;text-transform:uppercase;font-size:.78rem;color:var(--caramel2);font-weight:700}
+.frame h1{font-family:'Fraunces',serif;font-weight:900;color:var(--cocoa);font-size:clamp(2.6rem,7.4vw,4.9rem);line-height:1.02;margin-top:12px}
+.frame .script{display:block;font-size:clamp(2rem,5.4vw,3.4rem);color:var(--caramel);margin-top:10px;font-weight:400}
+.rule{display:flex;align-items:center;gap:14px;justify-content:center;margin:26px auto 20px;max-width:430px}
+.rule::before,.rule::after{content:"";height:1.5px;flex:1;background:var(--caramel)}
+.rule span{color:var(--caramel);font-size:1.05rem}
+.frame p.lede{max-width:600px;margin:0 auto;color:var(--cocoa2);font-size:1.05rem;line-height:1.75}
+.ratingline{display:inline-flex;gap:10px;align-items:center;margin-top:22px;background:var(--cream2);border:1.5px dashed var(--caramel);border-radius:999px;padding:9px 20px;font-weight:600;color:var(--cocoa)}
+.ratingline b{color:var(--caramel2)}
+.hero-cta{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:700;font-size:.95rem;transition:.25s;border:2px solid transparent}
+.btn-cocoa{background:var(--cocoa);color:#f8e8c8}
+.btn-cocoa:hover{background:var(--cocoa2);transform:translateY(-2px)}
+.btn-line{border-color:var(--caramel);color:var(--caramel2);background:transparent}
+.btn-line:hover{background:var(--cream2)}
+.btn-wa{background:#1faa55;color:#fff}
+.btn-wa:hover{background:#178a44;transform:translateY(-2px)}
+
+/* sections */
+section{padding:76px 0 8px}
+.center{text-align:center}
+.sec-over{letter-spacing:.32em;text-transform:uppercase;font-size:.76rem;color:var(--caramel2);font-weight:700}
+h2.title{font-family:'Fraunces',serif;font-weight:900;color:var(--cocoa);font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.1;margin-top:10px}
+.sub{color:var(--mut);margin:12px auto 0;max-width:560px;line-height:1.7}
+
+/* menu list */
+.menu{max-width:820px;margin:42px auto 0;background:var(--paper);border:1.5px solid var(--soft);border-radius:8px;padding:clamp(22px,4vw,42px);box-shadow:0 16px 36px rgba(59,36,22,.07)}
+.mitem{display:flex;align-items:baseline;gap:10px;padding:15px 2px;border-bottom:1px solid #f3e5c8}
+.mitem:last-child{border-bottom:none}
+.mitem .no{font-family:'Fraunces',serif;font-weight:700;color:var(--caramel);font-size:.95rem;min-width:30px}
+.mitem h3{font-family:'Fraunces',serif;font-weight:700;color:var(--cocoa);font-size:1.28rem;white-space:nowrap}
+.mitem .dots{flex:1;border-bottom:2px dotted var(--caramel);opacity:.55;transform:translateY(-4px)}
+.mitem p{color:var(--mut);font-size:.93rem;text-align:right;max-width:300px;line-height:1.5}
+@media(max-width:640px){.mitem{flex-wrap:wrap}.mitem .dots{display:none}.mitem p{text-align:left;max-width:none}}
+.menu-note{text-align:center;margin-top:18px;color:var(--mut);font-size:.92rem}
+.menu-note a{color:var(--caramel2);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* three cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}
+.card{background:var(--paper);border:1.5px solid var(--soft);border-top:5px solid var(--caramel);border-radius:8px;padding:28px 24px;text-align:center;transition:.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 34px rgba(59,36,22,.12)}
+.card .ic{font-size:1.9rem}
+.card h3{font-family:'Fraunces',serif;font-weight:700;color:var(--cocoa);font-size:1.25rem;margin:12px 0 8px}
+.card p{color:var(--mut);font-size:.95rem;line-height:1.65}
+
+/* order ticket */
+.ticket{max-width:820px;margin:44px auto 0;background:var(--cocoa);color:#f6e7c8;border-radius:10px;padding:clamp(26px,5vw,44px);text-align:center;position:relative;overflow:hidden}
+.ticket::before,.ticket::after{content:"";position:absolute;width:30px;height:30px;border-radius:50%;background:var(--cream);top:50%;transform:translateY(-50%)}
+.ticket::before{left:-15px}.ticket::after{right:-15px}
+.ticket .script{font-size:2.1rem;color:#eec27f}
+.ticket h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(1.7rem,4vw,2.5rem);margin-top:6px}
+.ticket p{opacity:.88;max-width:520px;margin:12px auto 0;line-height:1.7}
+.ticket .hero-cta{margin-top:24px}
+.btn-cream{background:#f6e3bb;color:var(--cocoa)}
+.btn-cream:hover{background:#fff0d2;transform:translateY(-2px)}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;margin-top:42px}
+@media(max-width:860px){.visit{grid-template-columns:1fr}}
+.vcard{background:var(--paper);border:1.5px solid var(--soft);border-radius:8px;padding:32px 28px}
+.vcard h3{font-family:'Fraunces',serif;font-weight:900;color:var(--cocoa);font-size:1.4rem;margin-bottom:12px}
+.kv{display:flex;gap:14px;padding:12px 0;border-bottom:1px dashed var(--soft);line-height:1.6}
+.kv:last-of-type{border-bottom:none}
+.kv b{color:var(--caramel2);min-width:80px;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;padding-top:4px}
+.kv a{color:var(--caramel2);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.visit p.lead{color:var(--cocoa2);line-height:1.8;margin-top:14px}
+
+footer{margin-top:80px;background:var(--cocoa);color:#d9bd8f;padding:36px 0 120px;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer .fname{font-family:'Fraunces',serif;font-weight:900;color:#f8e8c8;font-size:1.2rem}
+.disc{width:100%;font-size:.78rem;opacity:.85;line-height:1.6;margin-top:8px}
+
+/* mobile bar */
+.mbar{position:fixed;left:10px;right:10px;bottom:10px;z-index:60;display:none;gap:10px}
+.mbar a{flex:1;text-align:center;padding:14px;border-radius:999px;font-weight:700;font-size:.94rem}
+.mbar .c{background:var(--cocoa);color:#f8e8c8}
+.mbar .w{background:#1faa55;color:#fff}
+@media(max-width:720px){.mbar{display:flex}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Fine Bakers · <b>Shahi Road</b> · Rahim Yar Khan</div>
+
+<header>
+  <div class="wrap hbar">
+    <a class="brand" href="#top"><span class="seal">FB</span><span><span class="name">Fine Bakers</span><small>Bakery · Shahi Road</small></span></a>
+    <nav class="links">
+      <a href="#menu">The Counter</a><a href="#favourites">Favourites</a><a href="#visit">Visit</a>
+    </nav>
+    <a class="hcall" href="tel:+923256870001">Call the Bakery</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- POSTER HERO -->
+  <div class="poster">
+    <div class="frame">
+      <svg class="wheat left" width="44" height="190" viewBox="0 0 44 190" fill="none" aria-hidden="true"><path d="M22 186 V60" stroke="currentColor" stroke-width="2.5"/><path d="M22 70 C8 62 5 46 8 32 C20 38 24 52 22 70Z" fill="currentColor"/><path d="M22 70 C36 62 39 46 36 32 C24 38 20 52 22 70Z" fill="currentColor"/><path d="M22 104 C8 96 5 80 8 66 C20 72 24 86 22 104Z" fill="currentColor"/><path d="M22 104 C36 96 39 80 36 66 C24 72 20 86 22 104Z" fill="currentColor"/><path d="M22 138 C8 130 5 114 8 100 C20 106 24 120 22 138Z" fill="currentColor"/><path d="M22 138 C36 130 39 114 36 100 C24 106 20 120 22 138Z" fill="currentColor"/><path d="M22 58 C16 42 18 22 22 6 C26 22 28 42 22 58Z" fill="currentColor"/></svg>
+      <svg class="wheat right" width="44" height="190" viewBox="0 0 44 190" fill="none" aria-hidden="true"><path d="M22 186 V60" stroke="currentColor" stroke-width="2.5"/><path d="M22 70 C8 62 5 46 8 32 C20 38 24 52 22 70Z" fill="currentColor"/><path d="M22 70 C36 62 39 46 36 32 C24 38 20 52 22 70Z" fill="currentColor"/><path d="M22 104 C8 96 5 80 8 66 C20 72 24 86 22 104Z" fill="currentColor"/><path d="M22 104 C36 96 39 80 36 66 C24 72 20 86 22 104Z" fill="currentColor"/><path d="M22 138 C8 130 5 114 8 100 C20 106 24 120 22 138Z" fill="currentColor"/><path d="M22 138 C36 130 39 114 36 100 C24 106 20 120 22 138Z" fill="currentColor"/><path d="M22 58 C16 42 18 22 22 6 C26 22 28 42 22 58Z" fill="currentColor"/></svg>
+      <div class="over">Bakery · Shahi Road · Rahim Yar Khan</div>
+      <h1>Fine Bakers</h1>
+      <span class="script">fresh from the oven, every day</span>
+      <div class="rule"><span>✦</span></div>
+      <p class="lede">A Shahi Road bakery for celebration cakes, morning breads, crisp biscuits and tea-time savouries — the everyday stop rated 4.1 stars by 245 customers on Google.</p>
+      <div><span class="ratingline">Google rating <b>4.1 ★</b> · <b>245</b> reviews</span></div>
+      <div class="hero-cta">
+        <a class="btn btn-cocoa" href="tel:+923256870001">Call +92 325 6870001</a>
+        <a class="btn btn-wa" href="https://wa.me/923256870001" target="_blank" rel="noopener">WhatsApp the Bakery</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="wrap">
+      <div class="center">
+        <div class="sec-over">From the Counter</div>
+        <h2 class="title">The daily bake list</h2>
+        <p class="sub">The classics you will find at a good bakery counter — ask the bakery what is fresh when you call or visit.</p>
+      </div>
+      <div class="menu">
+        <div class="mitem"><span class="no">No. 1</span><h3>Celebration Cakes</h3><span class="dots"></span><p>Birthday and occasion cakes for family celebrations</p></div>
+        <div class="mitem"><span class="no">No. 2</span><h3>Pastries</h3><span class="dots"></span><p>Sweet and flaky favourites for tea time and guests</p></div>
+        <div class="mitem"><span class="no">No. 3</span><h3>Biscuits &amp; Rusks</h3><span class="dots"></span><p>Crisp bakes that belong beside a cup of chai</p></div>
+        <div class="mitem"><span class="no">No. 4</span><h3>Breads</h3><span class="dots"></span><p>Everyday loaves and buns for the family table</p></div>
+        <div class="mitem"><span class="no">No. 5</span><h3>Savouries</h3><span class="dots"></span><p>Savoury snacks and bites for any time of day</p></div>
+        <div class="mitem"><span class="no">No. 6</span><h3>Sweets &amp; Desserts</h3><span class="dots"></span><p>Sweet counter treats to finish a meal or gift a host</p></div>
+      </div>
+      <p class="menu-note">For today's selection and cake orders, call <a href="tel:+923256870001">+92 325 6870001</a> or message on WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- FAVOURITES -->
+  <section id="favourites">
+    <div class="wrap">
+      <div class="center">
+        <div class="sec-over">Why Stop By</div>
+        <h2 class="title">A Shahi Road favourite</h2>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="ic">🎂</div><h3>Cakes for Occasions</h3><p>From birthdays to family gatherings, order a cake ahead and collect it on your day.</p></div>
+        <div class="card"><div class="ic">🍞</div><h3>Daily Essentials</h3><p>Breads, biscuits and rusks — the simple staples that bring people back to the counter.</p></div>
+        <div class="card"><div class="ic">📍</div><h3>Easy to Reach</h3><p>Right on Shahi Road in Rahim Yar Khan — simple to find, simple to order from by phone.</p></div>
+      </div>
+
+      <div class="ticket">
+        <span class="script">planning something sweet?</span>
+        <h2>Order your cake ahead</h2>
+        <p>Share your date and what you have in mind on a call or WhatsApp message, and the bakery will confirm the details with you directly.</p>
+        <div class="hero-cta">
+          <a class="btn btn-cream" href="tel:+923256870001">Call the Bakery</a>
+          <a class="btn btn-wa" href="https://wa.me/923256870001" target="_blank" rel="noopener">WhatsApp an Order</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit">
+    <div class="wrap">
+      <div class="center">
+        <div class="sec-over">Visit Us</div>
+        <h2 class="title">Find us on Shahi Road</h2>
+      </div>
+      <div class="visit">
+        <div>
+          <span class="script" style="font-size:2rem;color:var(--caramel)">come say salaam,</span>
+          <p class="lead">Fine Bakers sits on Shahi Rd in the heart of Rahim Yar Khan. Pop in for the daily bake, or call ahead for cakes and larger orders — the counter team will take it from there.</p>
+          <div class="hero-cta" style="justify-content:flex-start">
+            <a class="btn btn-cocoa" href="https://www.google.com/maps/search/?api=1&amp;query=Fine+Bakers+Rahim+Yar+Khan" target="_blank" rel="noopener">Open in Google Maps</a>
+            <a class="btn btn-line" href="tel:+923256870001">Call Us</a>
+          </div>
+        </div>
+        <div class="vcard">
+          <h3>Bakery Details</h3>
+          <div class="kv"><b>Business</b><span>Fine Bakers — Bakery</span></div>
+          <div class="kv"><b>Address</b><span>Shahi Rd, Rahim Yar Khan, 64200, Pakistan</span></div>
+          <div class="kv"><b>Phone</b><span><a href="tel:+923256870001">+92 325 6870001</a></span></div>
+          <div class="kv"><b>Rating</b><span>4.1 stars from 245 Google reviews</span></div>
+          <div class="kv"><b>Map</b><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Fine+Bakers+Rahim+Yar+Khan" target="_blank" rel="noopener">Open in Google Maps →</a></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="fname">Fine Bakers</span>
+    <span>Shahi Road · Rahim Yar Khan</span>
+    <span><a href="tel:+923256870001">+92 325 6870001</a></span>
+    <p class="disc">Sample website concept created for Fine Bakers. Details shown are from the business's public Google listing; please confirm services, prices and timings with the business.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="c" href="tel:+923256870001">Call Now</a>
+  <a class="w" href="https://wa.me/923256870001" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+</body>
+</html>
